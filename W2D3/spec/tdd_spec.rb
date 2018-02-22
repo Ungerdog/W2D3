@@ -1,6 +1,6 @@
 describe "uniq" do
   let(:array) { [1, 2, 1, 3, 3] }
-  let(:unique_array) { my_uniq(array.dup) }
+  let(:unique_array) { uniq(array.dup) }
 
   it "removes dups" do
     array.each do |i|
@@ -11,7 +11,7 @@ end
 
 describe "two_sum" do
   let(:array) { [-1, 0, 2, -2, 1] }
-  
+
   it "finds zero-sum pairs" do
     expect(two_sum(array)).to eq([[0, 4], [2, 3]])
   end
